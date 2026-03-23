@@ -1,159 +1,129 @@
-# 📂 File & Folder Creator Tool
+# 📂 File & Folder List Viewer
 
-File & Folder Creator Tool is a command-line utility built using **Python 🐍**.
-
-The program allows users to quickly create folders and files using a single structured input command, making project setup faster and more efficient.
-
----
-
-# ✨ Features
-
-📁 **Automatic Folder Creation**
-
-* Creates folders instantly  
-* Supports multiple folders  
-
-📄 **File Generation**
-
-* Creates files inside folders  
-* Supports multiple file creation  
-
-⚡ **Single-Line Input System**
-
-* Define full structure in one line  
-* Simple and powerful syntax  
-
-🖥 **CLI Based Tool**
-
-* Easy to use  
-* Fast execution  
-
-💻 **Lightweight**
-
-* No external libraries required  
+A simple Python program that displays all files and folders inside a given directory path.  
+This tool helps you quickly explore and understand the contents of any folder using the terminal.
 
 ---
 
-# 📂 Project Structure
+## 🚀 Features
 
-```
-auto-list-the-files-and-folders
-│
-├── auto list the files and folders.py
-├── README.md
-└── LICENSE
-```
-
----
-
-# ⚙️ Installation
-
-## 1️⃣ Clone the Repository
-
-```
-git clone https://github.com/rsamwilson2323-cloud/auto-list-the-files-and-folders.git
-cd auto-list-the-files-and-folders
-```
+- 📁 Displays all folders in the given path  
+- 📄 Displays all files in the given path  
+- ✅ Validates if the path exists  
+- ❌ Handles invalid paths safely  
+- ⚡ Fast and lightweight  
+- 🧑‍💻 Beginner-friendly code  
 
 ---
 
-# 📦 Requirements
+## 🛠️ Requirements
 
-```
-Python 3.x
-```
-
----
-
-# ▶️ Usage
-
-Run the program:
-
-```
-python "auto list the files and folders.py"
-```
-
-Enter main folder path:
-
-```
-Enter main folder path: D:\Projects
-```
-
-Enter structure:
-
-```
-app{main.py},photo,game{game.py},index.html
-```
+- Python 3.x  
+- No external libraries required (uses built-in `os` module)
 
 ---
 
-# 🧪 Example Output
+## ▶️ How to Run
 
-```
-[FOLDER] app
-  └── [FILE] main.py
-[FOLDER] photo
-[FOLDER] game
-  └── [FILE] game.py
-[FILE] index.html
-```
+1. Clone the repository or download the file
 
----
+git clone https://github.com/your-username/file-folder-viewer.git
 
-# 🧠 How It Works
+2. Navigate to the folder
 
-📂 **Input Parsing**
+cd file-folder-viewer
 
-The program reads the structure string and splits items using commas.
+3. Run the Python file
 
-📁 **Folder Creation**
-
-Creates folders using `os.makedirs()`.
-
-📄 **File Creation**
-
-Creates files using Python file handling (`open()`).
-
-⚡ **Logic Handling**
-
-Detects `{}` to identify files inside folders and processes them accordingly.
+python main.py
 
 ---
 
-# 🎯 Output
+## 💻 Usage
 
-Creates folders and files in the specified directory exactly as defined in the input structure.
-
----
-
-# 🚀 Future Improvements
-
-📁 Nested folder support  
-📊 Advanced structure parsing  
-🎨 Colored CLI output  
-📄 Export structure templates  
-🖥 GUI version  
+- Enter the folder path when prompted  
+- The program will display all files and folders inside it  
 
 ---
 
-# ⚠️ Disclaimer
+## 📌 Example Output
 
-This project is intended for **educational and productivity purposes only**.
+==============================
+ FILE & FOLDER LIST VIEWER
+==============================
+
+Enter the folder path: D:\python coding
+
+📂 Contents of: D:\python coding
+
+[FOLDER] ai-fruit-ninja-main
+[FOLDER] area sensing yolov8n
+[FOLDER] auto file create with path
+[FOLDER] auto four line Poem Maker
+[FOLDER] auto list the files and folders
+[FOLDER] auto local link to web link convertr
+[FOLDER] auto multi zip extractor
+[FOLDER] automatic angle finder
+[FOLDER] Automatic Image Download From Web
+[FOLDER] calculator
+[FOLDER] cam test
+[FOLDER] Cyber face capture
+[FOLDER] driver monitorin
+[FOLDER] E-mail validation using Regex
+[FOLDER] Emotion Detection
+[FOLDER] Face And Eye Tracker
+[FOLDER] Face Recognition
+[FOLDER] flappy bird game
+[FOLDER] flowchart generator
+[FOLDER] FULL PC SCAN REPORT FOR APP AND MAIN
+[FOLDER] Image to ASCII
+[FOLDER] minute math
+[FOLDER] object tracker with 80 YOLO model
+[FOLDER] object tracker with multi model
+[FOLDER] pc data collector
+[FOLDER] person vehicle object counter
+[FOLDER] pixel art
+[FOLDER] pullups counter
+[FOLDER] pushups counter
+[FOLDER] qr code reader
+[FOLDER] Rock Paper Scissors game
+[FOLDER] Sound Map
+[FOLDER] Stickman Tracker Recorder
+[FOLDER] T-Rex Jump
+[FOLDER] Terminal Beat Maker
+[FOLDER] text to ASCII
+[FOLDER] virtual mouse
+[FOLDER] vitual air painter colour with different finger
+[FOLDER] webcam-dino-game-main
+[FOLDER] wifi password finder
+
+==============================
 
 ---
 
-# 👨‍💻 Author
+## 📂 Project Structure
 
-**Sam Wilson**
-
-🌐 GitHub  
-https://github.com/rsamwilson2323-cloud  
-
-💼 LinkedIn  
-https://www.linkedin.com/in/sam-wilson-14b554385  
+file-folder-viewer/
+│── main.py
+│── README.md
 
 ---
 
-# 📜 License
+## 📜 License
 
-This project is licensed under the **MIT License**.
+This project is open-source and free to use.
+
+---
+
+## 👤 Author
+
+Sam Wilson  
+📧 rsamwilson2323@gmail.com  
+🔗 GitHub: https://github.com/rsamwilson2323-cloud  
+🔗 LinkedIn: https://www.linkedin.com/in/sam-wilson-14b554385  
+
+---
+
+## ⭐ Support
+
+If you like this project, give it a ⭐ on GitHub!
