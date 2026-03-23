@@ -1,37 +1,36 @@
-# 📂 File & Folder List Viewer
+# 📂 File & Folder Creator Tool
 
-File & Folder List Viewer is a simple command-line utility built using **Python 🐍**.
+File & Folder Creator Tool is a command-line utility built using **Python 🐍**.
 
-The program allows users to enter a folder path and instantly view all files and subfolders inside it, with clear labeling and validation to ensure correct input and easy navigation.
+The program allows users to quickly create folders and files using a single structured input command, making project setup faster and more efficient.
 
 ---
 
 # ✨ Features
 
-📂 **Directory Listing**
+📁 **Automatic Folder Creation**
 
-* Displays all files and folders  
-* Clearly separates folders and files  
+* Creates folders instantly  
+* Supports multiple folders  
 
-✅ **Path Validation**
+📄 **File Generation**
 
-* Checks if the path exists  
-* Ensures the given path is a directory  
+* Creates files inside folders  
+* Supports multiple file creation  
 
-⚡ **Simple CLI Interface**
+⚡ **Single-Line Input System**
 
-* Easy to use command-line input  
-* Clean and readable output  
+* Define full structure in one line  
+* Simple and powerful syntax  
 
-🔄 **Real-Time Output**
+🖥 **CLI Based Tool**
 
-* Instantly lists contents  
-* Handles empty folders  
+* Easy to use  
+* Fast execution  
 
-💻 **Lightweight Tool**
+💻 **Lightweight**
 
 * No external libraries required  
-* Fast execution  
 
 ---
 
@@ -68,55 +67,78 @@ Python 3.x
 
 # ▶️ Usage
 
-Run the program using:
+Run the program:
 
 ```
 python "auto list the files and folders.py"
 ```
 
-📂 Enter the folder path when prompted.
+Enter main folder path:
+
+```
+Enter main folder path: D:\Projects
+```
+
+Enter structure:
+
+```
+app{main.py},photo,game{game.py},index.html
+```
+
+---
+
+# 🧪 Example Output
+
+```
+[FOLDER] app
+  └── [FILE] main.py
+[FOLDER] photo
+[FOLDER] game
+  └── [FILE] game.py
+[FILE] index.html
+```
 
 ---
 
 # 🧠 How It Works
 
-📂 **Input Handling**
+📂 **Input Parsing**
 
-Takes a folder path from the user.
+The program reads the structure string and splits items using commas.
 
-✅ **Validation**
+📁 **Folder Creation**
 
-Checks whether the path exists and is a valid directory.
+Creates folders using `os.makedirs()`.
 
-📁 **Listing**
+📄 **File Creation**
 
-Uses Python’s `os` module to list all files and folders.
+Creates files using Python file handling (`open()`).
 
-🖥 **Output**
+⚡ **Logic Handling**
 
-Displays results clearly with labels for files and folders.
+Detects `{}` to identify files inside folders and processes them accordingly.
 
 ---
 
 # 🎯 Output
 
-Shows a structured list of all files and folders inside the given directory, with clear labels and error handling.
+Creates folders and files in the specified directory exactly as defined in the input structure.
 
 ---
 
 # 🚀 Future Improvements
 
-📊 Sorting options  
-📁 Recursive folder listing  
-🎨 Colored terminal output  
+📁 Nested folder support  
+📊 Advanced structure parsing  
+🎨 Colored CLI output  
+📄 Export structure templates  
 🖥 GUI version  
-📄 Export results to file  
 
 ---
 
 # ⚠️ Disclaimer
 
-This project is intended for **educational and utility purposes only**.
+This project is intended for **educational and productivity purposes only**.
 
 ---
 
